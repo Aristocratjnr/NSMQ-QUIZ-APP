@@ -1,5 +1,5 @@
 "use client";
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import Image from 'next/image';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Card, CardHeader, CardTitle, CardContent, CardFooter } from './components/ui/CardComponents';
@@ -139,6 +139,24 @@ export default function NSMQQuiz() {
     setScore(0);
     setQuizEnded(false);
   };
+
+
+const backgroundMusic = new Audio('/audio/song.mp3');
+
+useEffect(() => {
+  if (!isMuted) {
+    backgroundMusic.loop = true; 
+    backgroundMusic.play().catch(error => {
+      console.error("Error playing background music:", error);
+    });
+  }
+
+
+  return () => {
+    backgroundMusic.pause();
+    backgroundMusic.currentTime = 0; // Reset to start
+  };
+}, [isMuted, backgroundMusic]); 
 
   const toggleMute = () => {
     setIsMuted((prev) => !prev);
