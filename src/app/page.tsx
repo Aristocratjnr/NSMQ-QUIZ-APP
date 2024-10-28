@@ -39,9 +39,7 @@ export default function NSMQQuiz() {
         options: ["0°C", "32°F", "100°C", "212°F"],
         correctAnswer: "0°C",
         explanation: "Water freezes at 0 degrees Celsius (32 degrees Fahrenheit)."
-      }
-    ],
-    medium: [
+      },
       {
         question: "Which of the following is not a type of chemical bond?",
         options: ["Ionic", "Covalent", "Metallic", "Magnetic"],
@@ -71,9 +69,7 @@ export default function NSMQQuiz() {
         options: ["Nucleus", "Mitochondria", "Ribosome", "Endoplasmic Reticulum"],
         correctAnswer: "Mitochondria",
         explanation: "Mitochondria are known as the powerhouse of the cell as they produce energy."
-      }
-    ],
-    hard: [
+      },
       {
         question: "What is the half-life of Carbon-14?",
         options: ["2,730 years", "5,730 years", "7,730 years", "9,730 years"],
@@ -103,6 +99,36 @@ export default function NSMQQuiz() {
         options: ["Isaac Newton", "Albert Einstein", "Galileo Galilei", "Stephen Hawking"],
         correctAnswer: "Albert Einstein",
         explanation: "Albert Einstein developed the theory of general relativity, which describes gravitation as a curvature of spacetime."
+      },
+      {
+        question: "What is the integral of e^x with respect to x?",
+        options: ["e^x + C", "xe^x + C", "x^2e^x + C", "ln|e^x| + C"],
+        correctAnswer: "e^x + C",
+        explanation: "The integral of e^x is e^x plus the constant of integration C."
+      },
+      {
+        question: "What is the Schwarzschild radius of a black hole?",
+        options: ["2GM/c^2", "GM/c^2", "4GM/c^2", "GM^2/c^2"],
+        correctAnswer: "2GM/c^2",
+        explanation: "The Schwarzschild radius defines the radius of the event horizon of a non-rotating black hole and is given by 2GM/c^2."
+      },
+      {
+        question: "What is the solution to the equation x^3 - 6x^2 + 11x - 6 = 0?",
+        options: ["1, 2, 3", "2, 3, 4", "0, 1, 2", "3, 4, 5"],
+        correctAnswer: "1, 2, 3",
+        explanation: "The equation factors to (x-1)(x-2)(x-3) = 0, giving roots x = 1, 2, and 3."
+      },
+      {
+        question: "What is the principle of superposition in quantum mechanics?",
+        options: ["Particles can exist in multiple states simultaneously", "Forces can cancel each other", "Energy is conserved in isolated systems", "Mass and energy are interchangeable"],
+        correctAnswer: "Particles can exist in multiple states simultaneously",
+        explanation: "The principle of superposition states that a quantum system can exist in multiple states at once until it is measured."
+      },
+      {
+        question: "What is the value of the Planck constant (h) in Joule seconds?",
+        options: ["6.626 x 10^-34", "9.109 x 10^-31", "1.602 x 10^-19", "3.00 x 10^8"],
+        correctAnswer: "6.626 x 10^-34",
+        explanation: "The Planck constant is approximately 6.626 x 10^-34 Joule seconds, a fundamental constant in quantum mechanics."
       }
     ]
   };
