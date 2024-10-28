@@ -210,7 +210,7 @@ export default function NSMQQuiz() {
             height={60}
             className="mr-4 rounded-full shadow-md"
           />
-          <h1 className="text-4xl font-extrabold text-blue-900 tracking-tight">NSMQ Ghana Quiz</h1>
+          <h1 className="text-3xl md:text-4xl font-extrabold text-blue-900 tracking-tight">NSMQ Ghana Quiz</h1>
         </div>
         <Button 
           variant="outline" 
