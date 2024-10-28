@@ -53,12 +53,6 @@ export default function NSMQQuiz() {
         explanation: "The square root of 144 is 12, because 12 × 12 = 144."
       },
       {
-        question: "What is the capital of France?",
-        options: ["Berlin", "Madrid", "Paris", "Lisbon"],
-        correctAnswer: "Paris",
-        explanation: "Paris is the capital city of France."
-      },
-      {
         question: "What is the chemical formula for water?",
         options: ["H2O", "CO2", "O2", "NaCl"],
         correctAnswer: "H2O",
