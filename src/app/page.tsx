@@ -1,5 +1,5 @@
 "use client";
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, ChangeEvent } from 'react';
 import Image from 'next/image';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Card, CardHeader, CardTitle, CardContent, CardFooter } from './components/ui/CardComponents';
@@ -226,7 +226,7 @@ useEffect(() => {
       value={option} 
       id={`option-${index}`} 
       checked={selectedAnswer === option} // Pass checked state
-      onChange={setSelectedAnswer} // Pass the onChange handler
+      onChange={(e: ChangeEvent<HTMLInputElement>) => setSelectedAnswer(e.target.value)} // Correctly handle the change event
       className={`${showAnswer && option === questions.easy[currentQuestion].correctAnswer ? 'bg-green-100' : ''}`} // Example conditional class
     />
   )){'}'}
