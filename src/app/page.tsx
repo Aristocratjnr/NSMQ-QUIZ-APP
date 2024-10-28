@@ -16,9 +16,95 @@ export default function NSMQQuiz() {
         correctAnswer: "Au",
         explanation: "Au is the chemical symbol for gold, derived from its Latin name 'aurum'."
       },
-      // ... (rest of the questions)
+      {
+        question: "What is the value of π (pi) to two decimal places?",
+        options: ["3.14", "3.16", "3.12", "3.18"],
+        correctAnswer: "3.14",
+        explanation: "Pi (π) is approximately equal to 3.14159, so to two decimal places it's 3.14."
+      },
+      {
+        question: "What is the largest planet in our solar system?",
+        options: ["Earth", "Jupiter", "Mars", "Saturn"],
+        correctAnswer: "Jupiter",
+        explanation: "Jupiter is the largest planet in our solar system."
+      },
+      {
+        question: "Which planet is known as the Red Planet?",
+        options: ["Venus", "Earth", "Mars", "Jupiter"],
+        correctAnswer: "Mars",
+        explanation: "Mars is often called the Red Planet due to its reddish appearance."
+      },
+      {
+        question: "What is the freezing point of water?",
+        options: ["0°C", "32°F", "100°C", "212°F"],
+        correctAnswer: "0°C",
+        explanation: "Water freezes at 0 degrees Celsius (32 degrees Fahrenheit)."
+      }
     ],
-    // ... (medium and hard questions)
+    medium: [
+      {
+        question: "Which of the following is not a type of chemical bond?",
+        options: ["Ionic", "Covalent", "Metallic", "Magnetic"],
+        correctAnswer: "Magnetic",
+        explanation: "Ionic, covalent, and metallic are types of chemical bonds. Magnetic is not a type of chemical bond."
+      },
+      {
+        question: "What is the square root of 144?",
+        options: ["10", "12", "14", "16"],
+        correctAnswer: "12",
+        explanation: "The square root of 144 is 12, because 12 × 12 = 144."
+      },
+      {
+        question: "What is the capital of France?",
+        options: ["Berlin", "Madrid", "Paris", "Lisbon"],
+        correctAnswer: "Paris",
+        explanation: "Paris is the capital city of France."
+      },
+      {
+        question: "What is the chemical formula for water?",
+        options: ["H2O", "CO2", "O2", "NaCl"],
+        correctAnswer: "H2O",
+        explanation: "Water is chemically represented as H2O, meaning it has two hydrogen atoms and one oxygen atom."
+      },
+      {
+        question: "What is the powerhouse of the cell?",
+        options: ["Nucleus", "Mitochondria", "Ribosome", "Endoplasmic Reticulum"],
+        correctAnswer: "Mitochondria",
+        explanation: "Mitochondria are known as the powerhouse of the cell as they produce energy."
+      }
+    ],
+    hard: [
+      {
+        question: "What is the half-life of Carbon-14?",
+        options: ["2,730 years", "5,730 years", "7,730 years", "9,730 years"],
+        correctAnswer: "5,730 years",
+        explanation: "The half-life of Carbon-14 is approximately 5,730 years."
+      },
+      {
+        question: "Which of the following is not a fundamental force of nature?",
+        options: ["Gravity", "Electromagnetic", "Strong Nuclear", "Centrifugal"],
+        correctAnswer: "Centrifugal",
+        explanation: "The four fundamental forces are gravity, electromagnetic, strong nuclear, and weak nuclear. Centrifugal force is a fictitious force in a rotating frame of reference."
+      },
+      {
+        question: "What is the main gas found in the air we breathe?",
+        options: ["Oxygen", "Nitrogen", "Carbon Dioxide", "Hydrogen"],
+        correctAnswer: "Nitrogen",
+        explanation: "Nitrogen makes up about 78% of the Earth's atmosphere."
+      },
+      {
+        question: "What is the most abundant element in the universe?",
+        options: ["Oxygen", "Hydrogen", "Carbon", "Helium"],
+        correctAnswer: "Hydrogen",
+        explanation: "Hydrogen is the most abundant element in the universe."
+      },
+      {
+        question: "Which scientist developed the theory of general relativity?",
+        options: ["Isaac Newton", "Albert Einstein", "Galileo Galilei", "Stephen Hawking"],
+        correctAnswer: "Albert Einstein",
+        explanation: "Albert Einstein developed the theory of general relativity, which describes gravitation as a curvature of spacetime."
+      }
+    ]
   };
 
   const [currentQuestion, setCurrentQuestion] = useState(0);
