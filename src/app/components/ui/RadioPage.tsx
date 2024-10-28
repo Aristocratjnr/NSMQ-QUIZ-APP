@@ -13,14 +13,14 @@ export const RadioGroup: React.FC<RadioGroupProps> = ({ value, onValueChange, ch
     <div className={`flex flex-col ${className}`}> {/* Apply className here */}
       {React.Children.map(children, (child) => {
         if (React.isValidElement(child)) {
-          const { value: childValue, onChange, ...rest } = child.props;
-          return React.cloneElement(child, {
-            checked: childValue === value,
+          return React.cloneElement(child as React.ReactElement<RadioGroupItemProps>, {
+            checked: child.props.value === value,
             onChange: (e: React.ChangeEvent<HTMLInputElement>) => {
-              if (onChange) onChange(e);
-              onValueChange(childValue);
+              onValueChange(child.props.value);
+              if (child.props.onChange) {
+                child.props.onChange(e);
+              }
             },
-            ...rest,
           });
         }
         return child;
