@@ -22,6 +22,24 @@ export default function NSMQQuiz() {
         correctAnswer: "3.14",
         explanation: "Pi (π) is approximately equal to 3.14159, so to two decimal places it's 3.14."
       },
+      {
+        question: "What is the largest planet in our solar system?",
+        options: ["Earth", "Jupiter", "Mars", "Saturn"],
+        correctAnswer: "Jupiter",
+        explanation: "Jupiter is the largest planet in our solar system."
+      },
+      {
+        question: "Which planet is known as the Red Planet?",
+        options: ["Venus", "Earth", "Mars", "Jupiter"],
+        correctAnswer: "Mars",
+        explanation: "Mars is often called the Red Planet due to its reddish appearance."
+      },
+      {
+        question: "What is the freezing point of water?",
+        options: ["0°C", "32°F", "100°C", "212°F"],
+        correctAnswer: "0°C",
+        explanation: "Water freezes at 0 degrees Celsius (32 degrees Fahrenheit)."
+      }
     ],
     medium: [
       {
@@ -36,6 +54,24 @@ export default function NSMQQuiz() {
         correctAnswer: "12",
         explanation: "The square root of 144 is 12, because 12 × 12 = 144."
       },
+      {
+        question: "What is the capital of France?",
+        options: ["Berlin", "Madrid", "Paris", "Lisbon"],
+        correctAnswer: "Paris",
+        explanation: "Paris is the capital city of France."
+      },
+      {
+        question: "What is the chemical formula for water?",
+        options: ["H2O", "CO2", "O2", "NaCl"],
+        correctAnswer: "H2O",
+        explanation: "Water is chemically represented as H2O, meaning it has two hydrogen atoms and one oxygen atom."
+      },
+      {
+        question: "What is the powerhouse of the cell?",
+        options: ["Nucleus", "Mitochondria", "Ribosome", "Endoplasmic Reticulum"],
+        correctAnswer: "Mitochondria",
+        explanation: "Mitochondria are known as the powerhouse of the cell as they produce energy."
+      }
     ],
     hard: [
       {
@@ -50,6 +86,24 @@ export default function NSMQQuiz() {
         correctAnswer: "Centrifugal",
         explanation: "The four fundamental forces are gravity, electromagnetic, strong nuclear, and weak nuclear. Centrifugal force is a fictitious force in a rotating frame of reference."
       },
+      {
+        question: "What is the main gas found in the air we breathe?",
+        options: ["Oxygen", "Nitrogen", "Carbon Dioxide", "Hydrogen"],
+        correctAnswer: "Nitrogen",
+        explanation: "Nitrogen makes up about 78% of the Earth's atmosphere."
+      },
+      {
+        question: "What is the most abundant element in the universe?",
+        options: ["Oxygen", "Hydrogen", "Carbon", "Helium"],
+        correctAnswer: "Hydrogen",
+        explanation: "Hydrogen is the most abundant element in the universe."
+      },
+      {
+        question: "Which scientist developed the theory of general relativity?",
+        options: ["Isaac Newton", "Albert Einstein", "Galileo Galilei", "Stephen Hawking"],
+        correctAnswer: "Albert Einstein",
+        explanation: "Albert Einstein developed the theory of general relativity, which describes gravitation as a curvature of spacetime."
+      }
     ]
   };
 
