@@ -1,12 +1,11 @@
 "use client";
 import React, { useState } from 'react';
 import Image from 'next/image';
-import Link from 'next/link';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Card, CardHeader, CardTitle, CardContent, CardFooter } from './components/ui/CardComponents';
 import { Button } from './components/ui/Button';
 import { RadioGroup, RadioGroupItem } from './components/ui/RadioPage';
-import { VolumeX, Volume2, ChevronRight, Trophy, Medal, WhatsappLogo } from 'lucide-react';
+import { VolumeX, Volume2, ChevronRight, Trophy, Medal } from 'lucide-react';
 
 export default function NSMQQuiz() {
   const questions = {
@@ -96,7 +95,7 @@ export default function NSMQQuiz() {
       <header className="w-full max-w-3xl mb-8 flex items-center justify-between">
         <div className="flex items-center">
           <Image
-            src="/public/nsmq.jpg"
+            src="/images/nsmq.jpg"
             alt="NSMQ Logo"
             width={60}
             height={60}
@@ -224,16 +223,7 @@ export default function NSMQQuiz() {
         © {new Date().getFullYear()} NSMQ Ghana. All rights reserved. Developed by Aristocrat Jnr
       </footer>
 
-      <Link
-        href="https://wa.me/551784926"
-        target="_blank"
-        rel="noopener noreferrer"
-        className="fixed bottom-6 right-6 bg-green-500 text-white p-4 rounded-full shadow-lg hover:bg-green-600 transition-all duration-300 transform hover:scale-110"
-        aria-label="Contact us on WhatsApp"
-      >
-        <WhatsappLogo className="w-6 h-6" />
-        <span className="sr-only">Contact us on WhatsApp</span>
-      </Link>
+ 
     </div>
   );
 }
