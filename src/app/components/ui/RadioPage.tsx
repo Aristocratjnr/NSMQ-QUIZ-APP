@@ -13,14 +13,14 @@ export const RadioGroup: React.FC<RadioGroupProps> = ({ value, onValueChange, ch
     <div className={`flex flex-col ${className}`}> {/* Apply className here */}
       {React.Children.map(children, (child) => {
         if (React.isValidElement(child)) {
-          return React.cloneElement(child as React.ReactElement<RadioGroupItemProps>, {
-            checked: child.props.value === value,
+          const { value: childValue, onChange, ...rest } = child.props;
+          return React.cloneElement(child, {
+            checked: childValue === value,
             onChange: (e: React.ChangeEvent<HTMLInputElement>) => {
-              onValueChange(child.props.value);
-              if (child.props.onChange) {
-                child.props.onChange(e);
-              }
+              if (onChange) onChange(e);
+              onValueChange(childValue);
             },
+            ...rest,
           });
         }
         return child;
@@ -43,7 +43,6 @@ export const RadioGroupItem: React.FC<RadioGroupItemProps> = ({ value, id, check
     <div className={`flex items-center ${className}`}> {/* Apply className here */}
       <input
         type="radio"
-        value={value}
         id={id}
         checked={checked} // Use the checked prop
         onChange={onChange} // Calls onChange when selected
