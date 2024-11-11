@@ -1,8 +1,7 @@
 import React, { useState } from 'react';
-import { Button } from './ui/Button'; // Adjust the import path as necessary
-
+import { Button } from './ui/Button'; 
 const MuteToggle: React.FC = () => {
-  const [isMuted, setIsMuted] = useState(false); // State to track mute status
+  const [isMuted, setIsMuted] = useState(false); 
 
   const toggleMute = () => {
     setIsMuted((prev) => !prev); // Toggle the mute state
